@@ -7,8 +7,6 @@ with open("images/test2.jpg", "rb") as imageFile:
 
     img_str = img_byte.decode("utf-8")
 
-
-# Mengubah image ke dalam bentuk biner
 len_img_str = len(img_str)    
 img_bin=''.join(format(ord(x), '07b') for x in img_str)
 
